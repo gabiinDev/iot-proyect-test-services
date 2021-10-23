@@ -6,9 +6,16 @@ sudo ./ install_docker.sh
 sudo rm install_docker.sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+sudo git clone https://github.com/gabiinDev/iot-proyect-test-services.git
+sudo mv iot-proyect-test-services iot_services
+cd iot_services
+
+
+// create env file
+
+sudo docker-compose -f docker-compose-production.yml up
 
 
 
-
-dockerd-rootless-setuptool.sh install
-https://docs.docker.com/go/daemon-access/
+// dockerd-rootless-setuptool.sh install
+// https://docs.docker.com/go/daemon-access/
