@@ -12,6 +12,8 @@ cd iot_services
 
 
 // create env file
+sudo git clone https://github.com/gabiinDev/iot-proyect-test-app.git
+sudo mv iot-proyect-test-app app
 
 sudo docker-compose -f docker-compose-production.yml up
 
